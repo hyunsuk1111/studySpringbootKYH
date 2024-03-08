@@ -9,6 +9,8 @@ public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository  memberRepository = new MemoryMemberRepository();
     //인터페이스에만 의존하게한다.
+    //값이 할당 되어있지 않으니 NullPointException >> OrderServiceImpl이 discountPolicy에
+    //구현객체를 생성해서 주입해줘야한다.
     private DiscountPolicy discountPolicy;
 
     @Override
