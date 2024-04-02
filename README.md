@@ -1,1 +1,1 @@
-study springbootJpa
+study springboot
